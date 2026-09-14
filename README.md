@@ -6,8 +6,8 @@ Transcription uses [Spotify's Basic Pitch](https://github.com/spotify/basic-pitc
 
 ## Stack
 
-- `backend/` — FastAPI + basic-pitch (port 8000)
-- `frontend/` — Next.js + React, canvas renderer (port 3000)
+- `backend/` — FastAPI + basic-pitch (port 8030)
+- `frontend/` — Next.js + React, canvas renderer (port 3030)
 
 ## Setup
 
@@ -17,7 +17,7 @@ Backend:
 cd backend
 python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
-uvicorn app.main:app --port 8000
+uvicorn app.main:app --port 8030
 ```
 
 Frontend (separate terminal):
@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open http://localhost:3030.
 
 ## How to use
 

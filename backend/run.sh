@@ -12,4 +12,4 @@ else
   source "$VENV_DIR/bin/activate"
 fi
 
-exec uvicorn app.main:app --reload --port 8000
+exec uvicorn app.main:app --reload --port 8030

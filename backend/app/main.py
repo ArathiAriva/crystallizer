@@ -18,7 +18,7 @@ app = FastAPI(title="Crystallizer")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000", "http://localhost:3030", "http://crystallizer.localhost"],
     allow_methods=["*"],
     allow_headers=["*"],
 )

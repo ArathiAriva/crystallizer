@@ -1,6 +1,13 @@
 fastapi>=0.115
 uvicorn[standard]>=0.30
 python-multipart>=0.0.9
-basic-pitch>=0.4
+# basic-pitch declares tensorflow-macos as a hard dep (~1GB), but we run the
+# ONNX model (nmp.onnx) via onnxruntime instead -- see app/main.py.
+# Install with --no-deps to keep TensorFlow out, then the deps below cover it.
+basic-pitch>=0.4  # install: pip install --no-deps basic-pitch
+librosa
+pretty_midi
+scikit-learn
+resampy
 onnxruntime>=1.18
 scipy<1.13

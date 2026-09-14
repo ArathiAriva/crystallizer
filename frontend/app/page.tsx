@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import SheetMusic from "./SheetMusic";
 
-const API = "http://localhost:8000";
+const API = "http://localhost:8030";
 
 type Note = { start: number; end: number; pitch: number; amplitude: number };
 type SongMeta = {
